@@ -1,0 +1,21 @@
+{
+  "name": "stream-rip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "get": "node src/get_segments.js",
+    "concat": "node src/concat_segments.js",
+    "start": "npm run get && npm run concat"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concat-files": "^0.1.1",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4",
+    "puppeteer": "^5.2.1",
+    "request": "^2.88.2"
+  }
+}
